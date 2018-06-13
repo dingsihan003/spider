@@ -1,5 +1,4 @@
 # Spider
-------
 ## 简介
 这个爬虫能从[中国天气网](http://www.weather.com.cn/)的[文字版国内天气预报](http://www.weather.com.cn/textFC/hb.shtml#)网页中爬取当前省份中所有市区白天夜间的名称、天气现象、风向、最高气温并存入MySQL中。
 
