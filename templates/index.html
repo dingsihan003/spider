@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<body>
+  <div id="t"></div>
+
+  <script type="text/javascript">
+
+    var data={{data | tojson}};
+    var html ="<table border='1'>"
+    html+="<th>城区</th><th>白天天气</th><th>白天风向</th><th>白天气温</th><th>夜间天气</th><th>夜间风向</th><th>夜间气温</th>"
+    for(var i=0;i<data.length;i++){
+        html+="<tr>";
+        for(var j=0;j<7;j++){
+            html +="<td>";
+            html += data[i][j];
+            html+="</td>";
+        }
+        html+="</tr>"
+    }
+    html +="</table>"
+    console.log(html)
+    document.getElementById('t').innerHTML = html;
+    </script>
+</body>
